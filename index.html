@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Modern Music Player</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+	<script src="https://kit.fontawesome.com/67fe7e7a7a.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js"
+		integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+	<!-- Link Swiper's CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+	<div class="main-container">
+		<div class="sub-main-container">
+			<div class="navbar">
+				<!-- NAVIGATION BAR -->
+				<div class="navbar-container">
+					<div class="nav-left">
+						<div class="player-title">
+							<i class="fa-solid fa-headphones-simple"></i>
+							<span>PraDhya</span>
+						</div>
+						<div class="menu-list">
+							<ul class="menu-nav">
+								<li class="menu-list-item">Music</li>
+								<li class="menu-list-item">Favourites</li>
+								<li class="menu-list-item">Downloads</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- SEARCH SONGS -->
+					<div class="nav-middle">
+						<div class="search-song">
+							<i class="fa-solid fa-magnifying-glass"></i>
+							<input type="text" placeholder="Search..." id="search-input" disabled />
+						</div>
+					</div>
+
+					<div class="nav-right">
+						<!-- SELECT LANGUAGES -->
+						<div class="music-language">
+							<span class="lang-head">Music Languages</span>
+							<span class="lang-choice">Hindi</span>
+							<i class="fa-solid fa-chevron-down"></i>
+						</div>
+
+						<!-- MUSIC PLAYER LOGIN -->
+						<div class="player-login">
+							<span>Login/ Register</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- SIDE MENU BAR -->
+			<div class="sidebar">
+				<i class="sidebar-menu-item fa-solid fa-magnifying-glass song-search"></i>
+				<i class="sidebar-menu-item fa-solid fa-house"></i>
+				<i class="sidebar-menu-item fa-solid fa-bookmark"></i>
+			</div>
+
+			<div class="container">
+				<!-- MUSIC CONTAINER -->
+				<div class="container-content">
+					<div class="swiper top-slider">
+						<div class="swiper-wrapper">
+							<!-- Slide 1 -->
+							<div class="swiper-slide bg-slider">
+								<div class="home-text">
+									<span class="home-head">We are PraDhya</span>
+									<span class="home-subhead">The all new modern Music Player <br />
+										with branded songs.</span>
+								</div>
+								<img src="img/Rahman.png" alt="" class="home-img" />
+							</div>
+
+							<!-- Slide 2 -->
+							<div class="swiper-slide bg-slider">
+								<div class="home-text">
+									<span class="home-head">We are PraDhya</span>
+									<span class="home-subhead">The all new modern Music Player <br />
+										with branded songs.</span>
+								</div>
+								<img src="img/diljit.png" alt="" class="home-img" />
+							</div>
+
+							<!-- Slide 3 -->
+							<div class="swiper-slide bg-slider">
+								<div class="home-text">
+									<span class="home-head">We are PraDhya</span>
+									<span class="home-subhead">The all new modern Music Player <br />
+										with branded songs.</span>
+								</div>
+								<img src="img/Kaur.png" alt="" class="home-img" />
+							</div>
+
+							<!-- Slide 4 -->
+							<div class="swiper-slide bg-slider">
+								<div class="home-text">
+									<span class="home-head">We are PraDhya</span>
+									<span class="home-subhead">The all new modern Music Player <br />
+										with branded songs.</span>
+								</div>
+								<img src="img/honey.png" alt="" class="home-img" />
+							</div>
+
+							<!-- Slide 5 -->
+							<div class="swiper-slide bg-slider">
+								<div class="home-text">
+									<span class="home-head">We are PraDhya</span>
+									<span class="home-subhead">The all new modern Music Player <br />
+										with branded songs.</span>
+								</div>
+								<img src="img/Justin.png" alt="" class="home-img" />
+							</div>
+
+							<!-- Slide 6 -->
+							<div class="swiper-slide bg-slider">
+								<div class="home-text">
+									<span class="home-head">We are PraDhya</span>
+									<span class="home-subhead">The all new modern Music Player <br />
+										with branded songs.</span>
+								</div>
+								<img src="img/Nucleya.png" alt="" class="home-img" />
+							</div>
+						</div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>
+
+					<!--- TRENDING SONGS -->
+					<div class="music-list-container">
+						<h1 class="music-list-title">Trending</h1>
+						<div class="music-list-wrapper">
+							<div class="music-list" name="trending"></div>
+							<i class="fa-solid fa-chevron-right arrow"></i>
+						</div>
+					</div>
+
+					<!-- TOP CHARTS -->
+					<div class="music-list-container">
+						<h1 class="music-list-title">Top Charts</h1>
+						<div class="music-list-wrapper">
+							<div class="music-list" name="top_charts"></div>
+							<i class="fa-solid fa-chevron-right arrow"></i>
+						</div>
+					</div>
+
+					<div class="background-img-2"></div>
+
+					<!-- ARTISTS -->
+					<div class="music-list-container">
+						<h1 class="music-list-title">Artists</h1>
+						<div class="music-list-wrapper">
+							<div class="music-list" name="artists"></div>
+							<i class="fa-solid fa-chevron-right arrow"></i>
+						</div>
+					</div>
+
+					<!-- DEVOTIONAL SONGS -->
+					<div class="dev-list-container">
+						<h1 class="music-list-title">Devotional</h1>
+						<div class="music-list-wrapper">
+							<div class="music-list" name="devotional"></div>
+							<i class="fa-solid fa-chevron-right arrow"></i>
+						</div>
+					</div>
+				</div>
+
+				<!--- MUSIC COMPONENT FOR MORE SONGS -->
+				<div class="music-component-detail hide-compo">
+					<i class="fa-solid fa-arrow-left close-compo-arrow"></i>
+					<div class="first-component-div"></div>
+					<div class="second-component-div">
+						<h3 class="second-compo-heading">Ganpati Bappa Morya</h3>
+						<div class="second-compo-song-list"></div>
+					</div>
+				</div>
+
+				<!-- PLAY SONG CONTAINER -->
+				<div class="play-current-song-music">
+					<div class="progress-div" id="progress-div">
+						<div class="progress-bar" id="progress-bar"></div>
+					</div>
+					<div class="current-music">
+						<div class="music-left">
+							<img src="img/t-1.jpg" alt="music-img" class="play-img" />
+							<div class="play-music-info">
+								<span class="play-music-song">Kesariya</span>
+								<span class="play-music-artist">Arjit Singh</span>
+							</div>
+						</div>
+						<div class="music-middle">
+							<i class="fa-solid fa-backward-step backward" title="Backward" id="backward"></i>
+							<i class="fa-solid fa-circle-play play-music" title="Play" id="play-music"></i>
+							<i class="fa-solid fa-forward-step forward" title="Forward" id="forward"></i>
+							<audio src="songs/Kesariya.mp3" id="music"></audio>
+						</div>
+						<div class="music-right">
+							<div class="song-duration">
+								<span id="current-song-duration">0:00 / 4:28</span>
+							</div>
+							<i class="fa-solid fa-up-right-and-down-left-from-center" id="expand"></i>
+							<i class="fa-solid fa-down-left-and-up-right-to-center hidden" id="contract"></i>
+						</div>
+					</div>
+				</div>
+
+				<!-- CURRENT SONG CONTAINER DETAILS -->
+				<div class="show-music-details" id="music-details-play">
+					<div class="show-details-music">
+						<div class="details-left">
+							<img src="img/t-1.jpg" alt="music-img" class="show-play-img" />
+							<div class="show-play-music-info">
+								<span class="show-play-music-song">Kesariya</span>
+								<span class="show-play-music-artist">Arjit Singh</span>
+							</div>
+						</div>
+						<div class="details-right">
+							<div class="details-right-heading">
+								<span>Related Songs</span>
+							</div>
+							<div class="details-right-related-songs">
+								<div class="related-song">
+									<div class="related-song-music-info">
+										<img src="img/t-1.jpg" alt="music-img" class="related-song-img" />
+										<div class="related-song-info">
+											<span class="related-song-song">Kesariya</span>
+											<span class="related-song-artist">Arjit Singh</span>
+										</div>
+									</div>
+									<div class="related-song-duration-heart">
+										<i class="fa-solid fa-heart related-song-heart"></i>
+										<i class="fa-solid fa-ellipsis related-song-more-detail"></i>
+									</div>
+								</div>
+								<div class="related-song">
+									<div class="related-song-music-info">
+										<img src="img/t-1.jpg" alt="music-img" class="related-song-img" />
+										<div class="related-song-info">
+											<span class="related-song-song">Kesariya</span>
+											<span class="related-song-artist">Arjit Singh</span>
+										</div>
+									</div>
+									<div class="related-song-duration-heart">
+										<i class="fa-solid fa-heart related-song-heart"></i>
+										<i class="fa-solid fa-ellipsis related-song-more-detail"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- SEARCH BAR FUNCTIONALITY -->
+		<div id="overlay-search">
+			<i class="fa-solid fa-xmark close-search"></i>
+			<div class="search-song-overlay">
+				<div class="search-bar-box">
+					<i class="fa-solid fa-magnifying-glass search-magnify-glass"></i>
+					<input type="text" placeholder="Search..." id="search-bar-input" />
+				</div>
+				<div class="show-search-song">
+
+				</div>
+			</div>
+		</div>
+
+		<!-- SIGNING PAGE -->
+		<div id="overlay">
+			<div class="signin-page">
+				<div class="login">
+					<i class="fa-solid fa-xmark close"></i>
+					<div class="main-login-page">
+						<div class="toggle">
+							<span>Login</span>
+							<span>Register</span>
+							<div class="toggle-ball"></div>
+						</div>
+
+						<div class="login-register">
+							<div class="login-page active">
+								<div class="login-div">
+									<div class="sing-login-img">
+										<img src="img/arjit.png" alt="" height="300px" />
+										<h2>All Your Music.</h2>
+										<h3><i>Anytime, anywhere.</i></h3>
+									</div>
+									<div class="login-window">
+										<h2>Welcome to PraDhya.</h2>
+										<span class="login-info">Log in or sign up with your email address.</span>
+										<input type="email" id="email" placeholder="Email Address" />
+										<input type="password" id="password" placeholder="Password" />
+										<button id="continue">Continue</button>
+										<span class="forget-pass">Forget Password?</span>
+										<span class="login-instruct"><i>By selecting ‘Continue’, you agree to Pradhya’s
+												Terms of Service and Privacy Policy.</i></span>
+									</div>
+								</div>
+							</div>
+							<div class="register-page">
+								<div class="register-div">
+									<div class="register-window">
+										<h2>Welcome to PraDhya.</h2>
+										<span class="register-info">Sign up with your email address.</span>
+										<input type="email" id="email" placeholder="Email Address" />
+										<input type="password" id="password" placeholder="Password" />
+										<input type="password" id="password" placeholder="Confirm Password" />
+										<button id="continue">Continue</button>
+										<span class="register-instruct"><i>By selecting ‘Continue’, you agree to
+												Pradhya’s Terms
+												of Service and Privacy Policy.</i></span>
+									</div>
+									<div class="sing-register-img">
+										<img src="img/register.png" alt="" height="300px" />
+										<h2>All Your Music.</h2>
+										<h3><i>Anytime, anywhere.</i></h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Swiper JS -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+	<script src="script.js"></script>
+
+	<!-- 	<script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> -->
+</body>
+
+</html>
